@@ -1,0 +1,24 @@
+<h4>Slideshow</h4>
+
+<div class="slideshow" ng-controller="Slideshow">
+	
+	<!--
+	<div class="carousel slide" carousel>
+		<div class="carousel-inner">
+			<div class="item" ng-repeat="photo in photos.content" carousel-item>
+				<img ng-src="{{ photo.src }}" alt="">
+			</div>
+		</div>
+	</div>
+	-->
+	
+	<div carousel></div>
+	
+	<div slider></div>
+	<p class="carousel-speed">
+		<strong>Speed: </strong>
+		<span class="muted">{{ carouselInterval / 1000 }} seconds</span>
+	</p>
+	
+</div>
+

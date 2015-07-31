@@ -1,0 +1,28 @@
+{
+	"author": "Diafilm",
+	"name": "diafilm",
+	"description": "Photo slideshow",
+	"version": "0.0.1",
+	"homepage": "",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"engines": {
+		"node": "~0.6.10 || 0.8 || 0.9"
+	},
+	"scripts": {
+		"start": "brunch watch --server"
+	},
+	"dependencies": {
+		"javascript-brunch": ">= 1.0 < 1.5",
+		"css-brunch": ">= 1.0 < 1.5",
+		"sass-brunch": ">= 1.0 < 1.5",
+		"auto-reload-brunch": ">= 1.3 < 1.5",
+		"uglify-js-brunch": ">= 1.0 < 1.5",
+		"clean-css-brunch": ">= 1.0 < 1.5"
+	},
+	"devDependencies": {
+		"jasmine-node":  ">= 1.0.9"
+	}
+}

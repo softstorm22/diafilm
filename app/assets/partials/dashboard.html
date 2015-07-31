@@ -1,0 +1,58 @@
+
+<div class="navbar navbar-inverse header">
+	<div class="navbar-inner">
+		<div class="container-narrow">
+			<a class="brand" href="#">Diafilm</a>
+
+			<div class="nav-collapse collapse pull-right">
+				<ul class="nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="hero-unit promo">
+	<div class="container-narrow">
+		<h1><i class="icon-picture promo-icon"></i> Magic slideshows</h1>
+		<p>
+			<strong>Diafilm</strong> helps you quickly create easy, one-of-a-kind slideshows! 
+		</p>
+	</div>
+</div>
+
+<div class="container-narrow">
+	<div class="row-fluid">
+	
+		<div class="span6">
+			<div ng-include src="'partials/slideshow.html'"></div>
+		</div>
+		
+		<div class="span6">
+			<div ng-include src="'partials/photos.html'"></div>
+		</div>
+		
+	</div>
+	
+	<div class="row-fluid">
+	
+		<form class="form-horizontal url-image-form" ng-submit="AddImageFromUrl()">
+			<fieldset>
+				<legend>Add images from other URLs </legend>
+				<div class="control-group">
+					<label class="control-label" for="imageUrl">Image URL </label>
+					<div class="controls">
+						<input type="text" id="imageUrl" placeholder="http://google.com/image.jpg" ng-model="imageUrl">
+						<button type="submit" class="btn">Add Image</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+
+	
+	</div>
+	
+</div>

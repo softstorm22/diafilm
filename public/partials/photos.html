@@ -1,0 +1,29 @@
+<h4>Photos</h4>
+
+<div class="alert alert-info">
+	<button type="button" class="close" data-dismiss="alert">×</button>
+	<strong>Tip:</strong> You can also <strong>drag and drop</strong> images from your computer to this box, and they'll be stored, even for offline use!
+</div>
+
+<div class="well photos photos-dropbox" ng-controller="Photos">
+	
+	<ul class="thumbnails">
+		<li class="span4 photo-item" ng-repeat="photo in photos.content">
+			<a href="#" class="thumbnail">
+				<img ng-src="{{ photo.src }}" alt="">
+			</a>
+			<a class="btn remove-photo-button" ng-click="RemovePhoto(photo.key)" title="Remove image"><i class="icon-remove"></i></a>
+		</li>
+	</ul>
+
+</div>
+
+<div class="btn-group row-fluid">
+	<a class="btn span6" ng-click="StopCarousel()">Stop</a>
+	<a class="btn btn btn-primary span6" ng-click="StartCarousel()" ng-disabled="runningCarousel">
+		<div ng-switch on="runningCarousel">
+			<span ng-switch-when="true">Running..</span>
+			<span ng-switch-default>Start</span>
+		</div>
+	</a>
+</div>
